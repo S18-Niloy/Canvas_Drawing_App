@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Drawing App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <canvas id="drawingCanvas"></canvas>
+    <div class="tools">
+      <button id="lineBtn" class="btn">Line</button>
+      <button id="rectBtn" class="btn">Rectangle</button>
+      <button id="triBtn" class="btn">Triangle</button>
+      <!-- Add buttons for other shapes -->
+      <button id="clearBtn" class="btn">Clear</button>
+      <div class="colors">
+        <button class="colorBtn" style="background-color: green;"></button>
+        <button class="colorBtn" style="background-color: red;"></button>
+        <button class="colorBtn" style="background-color: black;"></button>
+        <!-- Add more color buttons -->
+      </div>
+      <select id="unitSelect">
+        <option value="pixels">Pixels (px)</option>
+        <option value="inches">Inches (in)</option>
+        <!-- Add more unit options -->
+        
+      </select>
+     
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
